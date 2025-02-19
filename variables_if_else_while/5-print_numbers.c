@@ -1,9 +1,10 @@
 #include <stdio.h>
 
-	/**
-	 * main- The one
-	 * Return:Always 0
-	 */
+/**
+ * main - Entry point
+* Return: 0 (Success)
+*/
+
 int main(void)
 {
 	int i;
