@@ -7,17 +7,5 @@
  */
 int_islower(int c)
 {
-	_islower('o');
-	_islower(108);
-	_islower('c');
-	_islower('I');
-	_islower('s');
-	_islower(70);
-	_islower(20);
-	_islower('U');
-	_islower('n');
-	_islower(0);
-	_islower('H');
-
-return (c >= 'a' && c <= 'z');
+	return (c >= 'a' && c <= 'z');
 }
