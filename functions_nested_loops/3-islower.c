@@ -5,7 +5,7 @@
  * @c: the character to check
  * Return: 1 if c is lowercase, 0 otherwise
  */
-int _islower (int c)
+int_islower(int c)
 {
 	_islower('o');
 	_islower(108);
