@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *swaps_int - it swaps the value
+ *swap_int - it swaps the value
  *@a: point first value
  *@b: poitns second value
  */
