@@ -9,23 +9,22 @@
 
 int main(void)
 {
-    int sum = 0;
-    char password[100];
-    int i = 0;
-    int target = 2772;
-    srand(time(NULL));
+	int sum = 0;
+	char password[100];
+	int i = 0;
+	int target = 2772;
+	srand(time(NULL));
 
-    while (sum < target - 122)
-    {
-        password[i] = (rand() % 94) + 33;
-        sum += password[i];
-        i++;
-    }
+	while (sum < target - 122)
+	{
+		password[i] = (rand() % 94) + 33;
+		sum += password[i];
+		i++;
+	}
 
-    password[i] = target - sum;
-    password[i + 1] = '\0';
+	password[i] = target - sum;
+	password[i + 1] = '\0';
 
-    printf("%s\n", password);
-    return (0);
+	printf("%s\n", password);
+	return (0);
 }
-
