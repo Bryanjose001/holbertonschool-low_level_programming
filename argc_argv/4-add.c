@@ -1,9 +1,11 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
+
 /**
- * _atoi -converts a string to an integer
- *@s: string to be coverted
- *Return: the int coverted form the string
+ * _atoi - converts a string to an integer
+ * @s: string to be converted
+ *
+ * Return: the int converted from the string
  */
 int _atoi(char *s)
 {
@@ -35,6 +37,7 @@ int _atoi(char *s)
 				break;
 			f = 0;
 		}
+		i++;
 	}
 
 	if (f == 0)
@@ -44,10 +47,11 @@ int _atoi(char *s)
 }
 
 /**
- *main - adds two positive number
- *@argc: number of arguments
- *@argv: array of arguments
- *Return: 0 (Success), or 1 (Success)
+ * main - adds two positive number
+ * @argc: number of arguments
+ * @argv: array of arguents
+ *
+ * Return: 0 (Success), or 1 (Success)
  */
 int main(int argc, char *argv[])
 {
@@ -57,7 +61,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		for (j = 0; argv[i][j] != '\0' ; j++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 			if (argv[i][j] > '9' || argv[i][j] < '0')
 			{
@@ -79,4 +83,3 @@ int main(int argc, char *argv[])
 	printf("%d\n", sum);
 	return (0);
 }
-
